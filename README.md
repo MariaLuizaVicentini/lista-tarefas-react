@@ -71,4 +71,7 @@ npx eslint --init
 
 --> Code Runner
 --> ESLint
+---
+# video aula:
 
+https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/learn/lecture/17170540#content
