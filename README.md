@@ -53,3 +53,22 @@ meu-app/
 | `npm start` | Inicia o servidor de desenvolvimento |
 | `npm run build` | Gera a versão de produção |
 | `npm test` | Roda os testes |
+
+---
+
+# Extensoes utilizadas no VScode
+
+--> EditorConfig
+- na raiz do projeto, clique com o botao direito e selecione a opcao 'generate .editorconfig/'
+- em seguida, no terminal digite
+```bash
+npm i slint babel-eslint --save-dev
+```
+- depois disso, no terminal rode:
+```bash
+npx eslint --init
+```
+
+--> Code Runner
+--> ESLint
+
