@@ -1,28 +1,66 @@
+//----JEITO ANTIGO----//
+
+// module.exports = {
+//   env: {
+//     browser: true,
+//     es6: true,
+//   },
+//   extends: [
+//     'plugin:react/recommended',
+//     'airbnb',
+//   ],
+//   globals: {
+//     Atomics: 'readonly',
+//     SharedArrayBuffer: 'readonly',
+//   },
+//   parser: 'babel-eslint',
+//   parserOptions: {
+//     ecmaFeatures: {
+//       jsx: true,
+//     },
+//     ecmaVersion: 2018,
+//     sourceType: 'module',
+//   },
+//   plugins: [
+//     'react',
+//   ],
+//   rules: {
+//     "react/jsx-filename-extension": 0
+//   },
+// };
+
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2021: true,
+    jest: true,
+    node: true,
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
-    'airbnb',
+    'plugin:react-hooks/recommended',
+    'plugin:prettier/recommended',
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react', 'prettier', 'react-hooks'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
-    "react/jsx-filename-extension": 0
+    'react/react-in-jsx-scope': 'off',
   },
 };
